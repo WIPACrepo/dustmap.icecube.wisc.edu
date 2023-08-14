@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<style>
+img {
+maOArgin-left:5px;
+margin-right:5px;
+}
+</style>
+
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+
+ <meta name="GENERATOR"
+ content="Mozilla/4.08 [en] (X11; U; Linux 2.0.35 i686) [Netscape]">
+
+
+
+<title>IceCube Dust Map</title>
+
+<font size="+3">
+<center><b>IceCube Dust Map</b>
+</font>
+</center>
+
+
+
+
+<h6></h6>
+<center>
+<div class="figure">
+<a href="always.eps"><img src="always.png" WIDTH="62%" border="0"></a
+<a href="./array.eps"><img src="./array.png" WIDTH="30%" border="0"></a>
+<font size="-1">
+<br>
+Fig 1. (<i><b>Left</b></i>)   Borehole laser optical logging was able to resolve sub-centimeter dust features in repeated measurements.   Early stages of the Last Glacial Maximum are on the left side of the plot.  (<i><b>Right</b></i>) Aerial view of surface locations of each IceCube string deployed; solid color-coded circles indicate boreholes that were logged.  Surface ice flow velocity is 10.1 m a<small><sup>-1</sup></small> along 310<small><sup>&deg</sup></small> (approximately NW); prevailing wind in NE.  
+</font>
+</div>
+</center>
+<p></p>
+
+Accounting for the distortions and fine structure in dust will <A HREF="http://icecube.wisc.edu/~dima/work/WISC/ppc/fit/tilt/model/">improve the detector model</A>.  Laser Dust Logger profiles correspond closely to dust measurements in Antarctic ice cores.  Images taken in IceCube boreholes 21, 50, 66, 52, 10, 2, 86 and 14 between 2004 and 2011 (Fig. 1) show highly detailed, repeatable structure.  By aligning dust features in depth we can combine all optical logs to form an "average" dust profile.  Features have been mapped automatically using Dynamic Time Warping (described <a href="../2009JD013741.pdf">here</a>) at full ~2 mm effective resolution.  In some instances, small mapping errors may wash out fine scale features (&#60&#60;1 m) in forming the composite.  This composite South Pole optical profile is one of the best resolved and most stratigraphically coherent record of Antarctic dust of the last glacial period (Fig. 2).
+
+<h6></h6>
+<center>
+<!--
+<a href="./avg_v_edc.eps"><img src="avg_v_edc.png" width="47%" border="0"></a>
+<a href="./avg_v_edml.eps"><img src="avg_v_edml.png" width="47%" border="0"></a>
+
+
+<a href="./total_comp.eps"><img src="total_comp.png" width="50%" border="0"></a>
+-->
+<a href="./edml_comp_proposal.eps"><img src="edml_comp_proposal.png" width="43%" border="0"></a>
+<a href="./new_comparison.eps"><img src="new_comparison.png" width="52%" border="0"></a>
+
+</center>
+<center>
+<font size="-1">
+Fig 2. (<i><b>Left</b></i>) Averaged South Pole laser Dust Logger profile (<i>unpublished</i>) linearly scaled to measurements of insoluble dust in the ice core at Dronning Maud Land.  The optical composite is the best resolved Antarctic dust record available.   (<i><b>Right</b></i>) Dust Logger composite compared with Dome C core calcium from continuous flow analysis [Lambert et al. 2012].
+</font>
+</center>
+
+<h6></h6>
+
+To determine dust profiles for other strings we can interpolate or extrapolate using the eight dust logs as reference points.  Positions within the convex hull defined by the logs can be interpolated with a standard natural neighbor method (Delaunay tessellation).  External locations must be extrapolated and we use a modified ridge estimator.  <i>Extrapolated dust profiles</font></i> for strings not enclosed by dust logs, e.g. 75-78, <i>should be treated with caution.</i>  Note that Hole 21 was only logged to 2113 m, so the bottom ~350 meters in the southeast corner must also be extrapolated.
+<h6></h6>
+
+
+<br>
+<center>
+<a href="./all_maps.eps"><img src="all_maps.png" WIDTH="41%" border="0"></a>
+<a href="./mappings.eps"><img src="mappings.png" WIDTH="40%" border="0"></a>
+</center>
+
+<p></p>
+<font size="-1">
+Fig 3. (<i><b>Left</b></i>)  Dust feature depth maps for all holes relative to Hole 86; the seven basis maps are in red. (<i><b>Right</b></i>) Hole 86, logged in 2009-10, is closest to the origin of the array coordinate system.  The Hole 66 log reached the farthest back in time.</font>
+
+<br>
+<h6></h6>
+
+
+<center>
+<a href="./grad_field_mre.eps"><img src="grad_field_mre.png" WIDTH="40%" border="0"></a>
+<!--
+<a href="./wave225.png"><img src="wave225.png" WIDTH="41%" border="0"></a>
+-->
+<a href="./isochron_movie.gif"><img src="./isochron_movie.gif" WIDTH="53%" border="0"></a>
+</center>
+
+
+<center>
+<font size="-1">
+<p></p>
+Fig 4. (<i><b>Left, a</b></i>) Downhill gradients in dust layers across IceCube modeled using modified ridge estimation.  (<i><b>Right</b></i>) Movie of dust isochrons changing with depth.  
+<br>
+(<i><b>Below, b-f</b></i>) Dust isochron at selected depths; each contour line indicates a 2 m change in elevation.
+</font>
+</center>
+<p></p>
+<center>
+<a href="./1250_all.eps"><img src="./1250_all.png" WIDTH="30%" border="0"></a>
+<a href="./1550_all.eps"><img src="./1550_all.png" WIDTH="30%" border="0"></a>
+<a href="./1850_all.eps"><img src="./1850_all.png" WIDTH="30%" border="0"></a>
+<a href="./2150_all.eps"><img src="./2150_all.png" WIDTH="30%" border="0"></a>
+<a href="./2400_all.eps"><img src="./2400_all.png" WIDTH="30%" border="0"></a>
+</center>
+<p></p>
+
+
+<h6></h6>
+<br>
+<a name="tdp"></a>
+<br>
+Detector variables are useful for evaluating the map, particularly at locations far from dust log reference points.  Fig. 6 shows stacked track miss probability for strings with few if any bad DOMs (provided by Dawn Williams) and which are close to dust logged holes, overlaid with average dust and all warped to the depths of dust features for String 86 (near the array center).  Fine details in dust structure become more consequential in cleaner ice.  Features which appear as spikes in the dust logger signal can strongly affect the detector response but are currently not accounted for in simulations.  Although relatively thin layers, these pronounced local maxima in scattering and absorption tend to dump photons.
+<h6></h6>
+<center>
+<a href="./overlay_subset.eps"><img src="overlay_subset.png" WIDTH="48%" border="0"></a>
+<a href="./slc_overlay_domclean_subset.eps"><img src="slc_overlay_domclean_subset.png" WIDTH="49%" border="0"></a>
+</center>
+
+
+<font size="-1">
+Fig 5.  (<i><b>Left</b></i>) Stacked track miss probability (based on 200 m track detection probability) overlaid with average dust.  Spike-like features resulting from layers of volcanic or locally strong dust fallout can strongly affect the detector response, but are not currently modeled. (<i><b>Right</b></i>) Stacked, inverted software LC rate overlaid with average dust.
+</font>
+
+<p></p>
+
+
+<p></p>
+<h6></h6>
+<hr width="100%">
+<center><h4><u>The Map</u></h4></center>
+
+<center>
+<a href="./new_dl_movie.gif"><img src="./new_dl_movie.gif" WIDTH="56%" border="0"></a>
+<font size="-1">
+</center>
+<center>
+Fig 6. Dust layers mapped with an algorithm are stacked to form a composite average dust profile. 
+</font>
+</center>
+<p></p>
+
+
+Individual composite <a href="./profiles">dust profile</a> for any string, approximately normalized to Dome C core concentration (mass ppb).
+<br />&#60Depth&#62  &#60Dust_Concentration&#62
+<br />A tarball of all 86 profiles can be downloaded <a href="./all_dust_profiles.tar.gz">here</a>.
+<br>
+Version Aug. 15, 2011
+<p></p>
+Individual spline-smoothed <a href="./maps">dust feature maps relative to Hole 86</a>.  &#60Depth&#62  &#60Depth - Depth<sub>86</sub>&#62
+<br />A tarball of all 85 maps can be downloaded <a href="./all_depth_maps.tar.gz">here</a>.
+<p></p>
+
+
+
+<p></p>
+<h6></h6>
+<hr width="100%">
+<p></p>
+<center><h4><u>South Pole age vs. depth</u></h4></center>
+<p>
+We continue to refine the South Pole age scale, now nearly 90% of the way to bedrock.  At shallow and intermediate depths in bubbly ice, we used ash and dust layers from Dust Logger images that we could unambiguously associate with layers we detected in logs at Siple Dome and Dome C.  In the deep clear ice we tied our logs to dust measurements in the Dome C and EDML ice cores.  In Figure 7 we have extrapolated to bedrock using 1) a simple two-parameter quadratic depth transformation (0.389d - 0.56<font face="Helvetica, Arial, sans-serif">x</font>10<sup>-3</sup>d<sup>2</sup>) of Dome C age, forced through the origin and matched to our deepest dust features, and 2) a polynomial fit to all control points, including one below 2500 m extrapolated from Titan Dome Base, taken to be 165 kyr at 2850 m.
+</p>
+Preliminary South Pole <a href="./south_pole_avd.hole86.edc3.prelim.dat">age versus depth</a> (EDC3) for Hole 86. &#60Depth<sub>86</sub>&#62  &#60Age (kyr B.P.)&#62
+<p></p>
+<center>
+<a href="./sp_avd_new.eps"><img src="sp_avd_new.png" WIDTH="65%" border="0"></a>
+</center>
+<font size="-1">
+Fig 7.  South Pole age versus depth for Hole 86 (<i>unpublished</i>) on the EDC3 timescale.  The dashed red curve is a polynomial fit through our volcanic tie points, dust tie points, and a bedrock age estimate extrapolated from Titan Dome; the solid blue curve is Dome C age versus depth scaled to match SP tie points; the dotted gray curve was the prediction based on early AMANDA observations and a simple model.  An increase in accumulation rate during the Eemian period is evident in the Dome C analog.
+</font>
+
+
+<!--
+<p></p>
+<center><h4><u>Ice core data</u></h4></center>
+Dust measured in the Dome C ice core (mass ppb) using <a href="./edc_dust.laser.edc3.dat">laser scattering</a> and a <a href="./edc_dust.coulter.edc3.dat">Coulter counter</a> on the EDC3 timescale.
+<br>
+&#60Depth&#62  &#60Age (kyr B.P.)&#62  &#60Dust_Concentration&#62
+<p></p>
+Dust measured in the <a href="./edml_dust.edc3.dat">EDML ice core</a> on the EDC3 timescale.
+&#60Age (kyr B.P.)&#62  &#60Dust_Concentration&#62
+<p></p>
+-->
+
+
+
+
+<h6></h6>
+<hr width="100%">
+<p></p>
+<center><h4><u>Ash Layers</u></h4></center>
+From these images and dust logs made at Siple Dome (West Antarctica) and Dome C (East Antarctica), together with ice core measurements, we can identify certain depositions at South Pole to be volcanic.  We currently have around 20 candidate ash layers, with roughly half lying at IceCube instrumented depths.
+<p></p>
+<center>
+<a href="./ash_305.eps"><img src="ash_305.png" width="18%" border="0"></a>
+<a href="./ash_975.eps"><img src="ash_975.png" width="18%" border="0"></a>
+<a href="./ash_1877.eps"><img src="ash_1877.png" width="18%" border="0"></a>
+<a href="./ash_2348.eps"><img src="ash_2348.png" width="18%" border="0"></a>
+<a href="./ash_2441.eps"><img src="ash_2441.png" width="18%" border="0"></a>
+</center>
+
+<p></p>
+<font size="-1">
+Fig 8. Volcanic ash layers in the ice at South Pole present optical singularities that can appear light or dark, depending on ash albedo and context. Only the first has been confirmed in a shallow ice core; a few others can be associated with layers at other locations which have been chemically confirmed as volcanic.
+</font>
+
+
+<p></p>
+<h6></h6>
+<hr width="100%">
+<p></p>
+<center><h4><u>How the Dust Logger works</u></h4></center>
+<p>
+The Dust Logger makes high definition images of optical effects due to particulates and bubbles, integrated over an area of order m<small><sup>2</sup></small> of the horizon.  Residual air bubbles reduce the contrast of dust scattering and make unambiguous identification of horizons increasingly difficult shallower than about 1200 m and into the Last Glacial Maximum around ~1150 m.  In all dust profiles the effects of bubble scattering have been removed with an amplitude correction of 0.37% per meter above 1350 m (Fig. 9).  At depths below 1350 m where all bubbles have converted to air hydrates, the logger signal closely tracks insoluble mineral dust (Fig. 2).</p>
+<p></p>
+<center>
+<a href="./bubble_correction.eps"><img src="bubble_correction.png" HEIGHT="230" border="0"></a>
+<font size="-1">
+<p></p>
+Fig 9. An ad hoc amplitude correction, to remove the effects of bubble scattering above 1350 m, has been applied to all Dust Logger profiles.
+</font>
+</center>
+
+<p>
+The logger uses a computer-controlled 404 nm laser line generator, digital photon counter for light detection and a precision Paroscientific pressure sensor for primary depth determination.  Annular black nylon brushes function as baffles to intercept stray photons and sweep detritus, particularly ice crystals, from the light path.  To log Holes 21 and 50 we permanently affixed the probe to the detector string and acquired data while the string was deployed; during the first log in Hole 21, telemetry with the probe was lost below 2113 meters.  In the four subsequent boreholes we used the Robertson logging winch to deploy a ruggedized instrument which we could hoist back to the surface, making profiles on both the down and up trips and recovering the device.  Data are sent as 10-ms samples to the surface using DSL communication.  Logging depth is reconstructed from both pressure readings and winch payout, surveys of the snow surface, well distance to the top of the water column and corrections for water compressibility and cable stretch.  Absolute logger depth accuracy is probably limited to a meter or two, while relative uncertainty over moderate depth intervals is negligible.
+</p>
+
+<p>&nbsp</p>
+<p></p>
+<b>References:</b>
+<br>
+<ul>
+<li>EPICA community members, Eight glacial cycles from an Antarctic ice core, Nature <b>429</b>, 623-628 (2004).
+<br>
+<li>F. Parrenin <i>et al.</i>, The EDC3 chronology for the EPICA Dome C ice core, Clim. Past <b>3</b>, 485-497 (2007).
+<br>
+<li>P.Buford Price and The AMANDA Collaboration, On the age vs depth and optical clarity of deep ice at the South Pole, J. Glaciol. <b>41</b>, 445-454 (1995).
+<br>
+<li>Urs Ruth, <i>pers. comm</i>.
+<br>
+<li>Matthias Bigler, <i>pers. comm</i>.
+<br>
+<li>Regine R&ouml;thlisberger <i>et al.</i>, Dust and sea-salt variability in central East Antarctica (Dome C) over the last 45 kyrs and its implications for southern high-latitude climate, GRL <b>29</b>, 1963 (2002).
+<br>
+<li>Martin J. Siegert and R. Hodgkins, A stratigraphic link across 1100 km of the Antarctic ice sheet between the Vostok ice core site and Titan Dome (near South Pole), Geophys. Res. Lett. <b>27</b>, 2133-2136 (2000).
+</ul>
+<br>
+
+
+
+
+
+
+</body></html>
